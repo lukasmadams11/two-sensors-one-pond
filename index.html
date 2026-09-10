@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Two Sensors, One Pond</title>
+<title>Two Sensors, One Pond · Simply the GOAT</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Atkinson+Hyperlegible+Mono:wght@400;500&family=Young+Serif&display=swap">
 <style>
   :root {
     --paper: #F6F5F0;
@@ -136,6 +139,89 @@
   .diagfig svg { width: 100%; height: auto; display: block; }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
+
+<style id="sg-v2">
+/* ===== Simply the GOAT design system v2 "August Morning" — shared overrides ===== */
+:root {
+  --paper: #FCFAF3; --sheet: #FFFFFF; --ink: #2B2621; --muted: #6E675C; --stone: #6E675C; --accent: #4C7A3F; --accent-deep: #3E6533;
+  --line: #E4DDCE; --sheet-line: #E4DDCE; --chip-bg: #F3EDDF; --chip: #F3EDDF; --mat: #F3EDDF;
+  --amber: #7E5A12; --amber-bg: #F8EED6; --amber-text: #7E5A12; --straw: #D9A441; --water: #34708F; --flame: #A8482A;
+  --band-blue: #35639F; --band-green: #457024; --band-red: #B93A2A; --band-rededge: #B0397F; --band-nir: #6D5BC7; --clipgray: #B8B5AC;
+  --btn-text: #fff; --focus: #4C7A3F;
+  --font-body: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Young Serif", "Iowan Old Style", Georgia, serif;
+  --font-mono: "Atkinson Hyperlegible Mono", "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1C1A17; --sheet: #24211C; --ink: #EDE7DA; --muted: #A69E90; --stone: #A69E90; --accent: #8FBF74; --accent-deep: #A3CC8B;
+    --line: #35312B; --sheet-line: #35312B; --chip-bg: #2A2620; --chip: #2A2620; --mat: #24211C;
+    --amber: #E2B85C; --amber-bg: #2A251A; --amber-text: #E2B85C; --straw: #E2B85C; --water: #7FB4D3; --flame: #E58A6A;
+    --band-blue: #4E7FBF; --band-green: #6FA045; --band-red: #E06B55; --band-rededge: #D06CA6; --band-nir: #9F8FE0; --clipgray: #5A5F55;
+    --btn-text: #1C1A17; --focus: #E2B85C; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1C1A17; --sheet: #24211C; --ink: #EDE7DA; --muted: #A69E90; --stone: #A69E90; --accent: #8FBF74; --accent-deep: #A3CC8B;
+  --line: #35312B; --sheet-line: #35312B; --chip-bg: #2A2620; --chip: #2A2620; --mat: #24211C;
+  --amber: #E2B85C; --amber-bg: #2A251A; --amber-text: #E2B85C; --straw: #E2B85C; --water: #7FB4D3; --flame: #E58A6A;
+  --band-blue: #4E7FBF; --band-green: #6FA045; --band-red: #E06B55; --band-rededge: #D06CA6; --band-nir: #9F8FE0; --clipgray: #5A5F55;
+  --btn-text: #1C1A17; --focus: #E2B85C; color-scheme: dark;
+}
+html { -webkit-text-size-adjust: 100%; }
+body { font-family: var(--font-body) !important; font-size: 18px !important; line-height: 1.6; }
+@media (max-width: 640px) { body { font-size: 17px !important; } }
+h1, h2, h3, .pop-name { font-family: var(--font-display) !important; font-weight: 400 !important; }
+h1 { font-size: clamp(2.2rem, 5.5vw, 3.4rem) !important; line-height: 1.08 !important; }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.1rem) !important; }
+.mono, .coords, td.mono, footer .mono, .series, .plate-no, .stat b, .rampnums, .ramp-row { font-family: var(--font-mono) !important; }
+/* floors: anything a client must read >= 16px; mono small print >= 14px */
+.eyebrow, .chip, .chips .chip, th, .stat span, .stat b, figcaption, .sheet figcaption, .index small, .badge, .caption, .lede, .who, .coords, .legend, .fuelkey, .ramp-row, .rampwords, .callout .eyebrow, .muted, .small, .site .coords, footer, footer p, .credit, .tablewrap td, .tablewrap th, .fuelbar-label, .keyrow, .stat, dd, dt, li, .note {
+  font-size: max(16px, 1em);
+}
+.mono, .coords, td.mono, footer .mono, .series, .plate-no, .rampnums, .credit { font-size: max(14px, 0.875em) !important; }
+.eyebrow, .plate-no, .stat span, .badge, .callout .eyebrow, .index .plate-no { letter-spacing: 0.04em !important; text-transform: none !important; }
+.eyebrow, .callout .eyebrow { font-family: var(--font-body) !important; font-weight: 700 !important; color: var(--accent-deep) !important; }
+.ramp-row, .sheet figcaption, figcaption { color: var(--ink) !important; font-family: var(--font-body) !important; }
+.ramp { height: 16px !important; }
+p.muted, .muted p { color: var(--ink) !important; }
+a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+section, [id] { scroll-margin-top: 72px; }
+.sheet, .site { border-radius: 2px !important; box-shadow: none !important; }
+.dl, .btn { min-height: 48px; display: inline-flex; align-items: center; padding: 12px 20px; font-weight: 700; border-radius: 2px !important; background: var(--accent) !important; color: var(--btn-text) !important; }
+/* shared header */
+.sg-top { position: sticky; top: 0; z-index: 50; background: var(--paper); border-bottom: 1px solid var(--line); }
+.sg-top .in { max-width: 1060px; margin: 0 auto; padding: 0 16px; min-height: 56px; display: flex; align-items: center; gap: 8px; }
+.sg-brand { font-family: var(--font-display); font-size: 20px; text-decoration: none; color: var(--ink); padding: 10px 8px 10px 0; white-space: nowrap; }
+.sg-brand b { color: var(--accent); font-weight: 400; }
+.sg-nav { display: flex; gap: 2px; margin-left: auto; align-items: center; }
+.sg-nav a { font-weight: 700; font-size: 16px; color: var(--ink); text-decoration: none; min-height: 44px; padding: 10px 12px; display: inline-flex; align-items: center; border-radius: 2px; white-space: nowrap; }
+.sg-nav a[aria-current="page"] { color: var(--accent-deep); box-shadow: inset 0 -3px 0 var(--straw); }
+.sg-nav a:hover { background: var(--mat); }
+@media (max-width: 720px) { .sg-nav .sg-hide { display: none; } .sg-nav a { font-size: 15px; padding: 10px 8px; } .sg-brand { font-size: 18px; } }
+/* shared contact footer */
+.sg-foot { border-top: 3px solid var(--straw); margin-top: 64px; padding: 32px 0 56px; font-size: 16px; }
+.sg-foot .in { max-width: 1060px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 40px; }
+.sg-foot h3 { font-family: var(--font-body) !important; font-weight: 700 !important; font-size: 17px !important; margin: 0 0 8px; }
+.sg-foot p { margin: 0 0 8px; }
+.sg-foot .credit { font-family: var(--font-mono); font-size: 14px; color: var(--muted); grid-column: 1 / -1; margin-top: 8px; }
+@media print {
+  .sg-top, .dl, .btn { display: none !important; }
+  :root { --paper: #fff; --ink: #000; --muted: #333; }
+  body { font-size: 12pt !important; }
+  details:not([open]) > * { display: block; }
+  figure, .sheet, .site, table { break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10pt; color: #333; }
+}
+</style>
+</head>
+<body>
+<header class="sg-top"><div class="in"><a class="sg-brand" href="https://lukasmadams11.github.io/big-flight-guide/">Simply the <b>GOAT</b></a>
+<nav class="sg-nav" aria-label="Pages"><a href="https://lukasmadams11.github.io/big-flight-guide/">What the Drone Saw</a><a href="https://lukasmadams11.github.io/ranch-map-viewer/" class="sg-hide">Ranch Atlas</a><a href="https://lukasmadams11.github.io/finding-water/" class="sg-hide">Finding Water</a><a href="#" aria-current="page">Two Sensors, One Pond</a></nav></div></header>
+
+
 
 <div class="col">
   <header class="hero">
@@ -299,3 +385,12 @@
     <div>Classes: height from LiDAR DSM−DEM, breaks at 20 in and 6½ ft · condition from the camera's NDVI (green ≥ 0.50 in the tall band, ≥ 0.40 below it; bare &lt; 0.15) · water by near-infrared + NDVI + height under 20 in. All numbers computed from the delivered files.</div>
   </footer>
 </div>
+
+<footer class="sg-foot"><div class="in">
+<div><h3>Prepared by</h3><p><strong>Simply the GOAT</strong> · Luke Adams</p><p>Drone mapping and targeted goat grazing for wildfire fuel reduction, Sierra foothills.</p></div>
+<div><h3>Prepared for</h3><p>The landowner · Fresno County, CA</p><p>Shared with the landowner's permission. Please contact us before republishing.</p></div>
+<div><h3>Next step</h3><p>The walk-through is free; scope and price follow it. Contact details are on <a href="https://lukasmadams11.github.io/big-flight-guide/#s-about">What the Drone Saw</a>.</p></div>
+<p class="credit">Ranch series: <a href="https://lukasmadams11.github.io/big-flight-guide/">What the Drone Saw</a> · <a href="https://lukasmadams11.github.io/ranch-map-viewer/">Ranch Atlas</a> · <a href="https://lukasmadams11.github.io/finding-water/">Finding Water</a> · <a href="https://lukasmadams11.github.io/pond-flight-guide/">Reading the Pond Flight</a> · <a href="https://lukasmadams11.github.io/bunkhouse-lidar-guide/">Reading the Bunkhouse LiDAR</a> · <a href="https://lukasmadams11.github.io/goats-vs-fire/">Goats vs. Fire</a> · <a href="https://lukasmadams11.github.io/two-sensors-one-pond/">Two Sensors, One Pond</a></p>
+</div></footer>
+</body>
+</html>
